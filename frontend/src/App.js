@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, Routes } from 'react-router-dom';
+import {HashRouter as  Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import 'quill/dist/quill.snow.css'; 
 import OneBoxScreen from './components/OneBoxScreen';
