@@ -1,0 +1,783 @@
+/* Container for the entire layout */
+.onebox-container {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    grid-template-rows: 60px 1fr; 
+    height: 100vh;
+    overflow: hidden;
+}
+.d-onebox-container {
+    display: grid;
+    grid-template-columns: 80px 1fr; 
+    grid-template-rows: 60px 1fr; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Top Navbar */
+.top-navbar {
+    grid-column: 2 / -1; 
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.d-top-navbar {
+    grid-column: 2 / -1; 
+    background-color: black;
+    height: 60px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+}
+
+/* Sidebar */
+.left-sidebar {
+    background-color: white;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-row: 1 / -1; 
+    align-items: center;
+    position: relative;
+}
+.d-left-sidebar {
+    background-color: black;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-row: 1 / -1; 
+    align-items: center;
+    position: relative;
+    color: white;
+}
+.sidebar-icon1 {
+    position: absolute;
+    font-size: 50px;
+    top: 0px;
+    cursor: pointer;
+    
+}
+.sidebar-icon2 {
+    position: absolute;
+    font-size: 30px;
+    top: 100px;
+    cursor: pointer;
+}
+.sidebar-icon3 {
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    cursor: pointer;
+}
+.sidebar-icon4 {
+    position: absolute;
+    font-size: 30px;
+    bottom: 2px;
+    cursor: pointer;
+}
+.d-sidebar-icon1 {
+    position: absolute;
+    font-size: 50px;
+    top: 0px;
+    color: white;
+    cursor: pointer;
+    
+}
+.d-sidebar-icon2 {
+    position: absolute;
+    font-size: 30px;
+    top: 100px;
+    color: white;
+    cursor: pointer;
+}
+.d-sidebar-icon3 {
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    color: white;
+    cursor: pointer;
+}
+.d-sidebar-icon4 {
+    position: absolute;
+    font-size: 30px;
+    bottom: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Main Content Area */
+.main-content {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    overflow-y: auto;
+    grid-column: 2; 
+    background-color: #f7f6f7;
+}
+.d-main-content {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    overflow-y: auto;
+    grid-column: 2; 
+    background-color: #000000;
+    color: white;
+}
+
+
+
+
+/* Email List */
+.email-list {
+    border-right: 1px solid black;
+    margin-right: 20px;
+    padding: 5px;
+    width : 278px;
+   
+}
+.d-email-list {
+    border-right: 1px solid white;
+    margin-right: 20px;
+    padding: 5px;
+    width : 278px;
+    color: white;
+   
+}
+
+.email-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.d-email-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.email-list li {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    position: relative; 
+}
+.d-email-list li {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    position: relative; 
+}
+
+.email-list li.selected {
+    background: linear-gradient(to right, #80c9f6, #e0f7ff); 
+    border-left: 4px solid #004080; 
+}
+.d-email-list li.selected {
+background: linear-gradient(to right, #80f6a0, #e0ffeb); 
+border-left: 4px solid #00ff00; 
+color: black;
+ 
+}
+
+.email-list strong  {
+    font-size: small;
+}
+.d-email-list strong  {
+    font-size: small;
+}
+.email-list p  {
+    font-size: small;
+}
+.d-email-list p  {
+    font-size: small;
+}
+
+
+.no-email-selected{
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 1000px;
+    
+}
+.d-no-email-selected{
+    margin-left: 270px;
+    margin-top: 100px;
+    width: 1000px;
+    background-color: black;
+    
+    
+}
+
+/* Email Details */
+.email-details {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.d-email-details {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: white;
+}
+.mail-structure{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 8px; 
+    margin-top: 10px;
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 705px; 
+}
+.d-mail-structure{
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 8px; 
+    margin-top: 10px;
+    background-color: black; 
+     
+    max-width: 705px; 
+}
+.mail-structure h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #333; 
+}
+.d-mail-structure h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #b7b7b7; 
+}
+
+.mail-structure p {
+    margin: 10px 0;
+    line-height: 1.5; 
+    color: #555; 
+}
+.d-mail-structure p {
+    margin: 10px 0;
+    line-height: 1.5; 
+    color: #d6d6d6; 
+}
+
+.mail-structure strong {
+    color: #333; 
+}
+.d-mail-structure strong {
+    color:#fdf8f8; 
+}
+
+.email-actions {
+    display: flex;
+    position: relative;
+}
+.d-email-actions {
+    display: flex;
+    position: relative;
+}
+.reply-button{
+    position: absolute;
+    top : 650px;
+    background: linear-gradient(to left, #0626c1, #4661db);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+.d-reply-button{
+    position: absolute;
+    top : 650px;
+    background: linear-gradient(to left, #0626c1, #4661db);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+.delete-button{
+    position: absolute;
+    left : 1005px;
+    top : 650px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: medium;
+    background: linear-gradient(to left, #ff0000, #ff3838);
+    color: white;
+    cursor: pointer;
+}
+.d-delete-button{
+    position: absolute;
+    left : 1005px;
+    top : 650px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: medium;
+    background: linear-gradient(to left, #ff0000, #ff3838);
+    color: white;
+    cursor: pointer;
+}
+.email-replies {
+    margin-top: 20px;
+    border-top: 1px solid #ddd; 
+    padding-top: 10px;
+}
+.d-email-replies {
+    margin-top: 20px;
+    border-top: 1px solid #1a1818; 
+    padding-top: 10px;
+}
+
+.email-reply {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+}
+.d-email-reply {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #1e1c1c;
+    border-radius: 5px; 
+    background-color: #070606; 
+}
+
+.email-reply p {
+    margin: 5px 0; 
+}
+.d-email-reply p {
+    margin: 5px 0; 
+}
+
+.email-reply strong {
+    color: #333; 
+}
+.d-email-reply strong {
+    color: #f9f1f1; 
+}
+
+
+
+/* Reply Modal */
+.reply-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.d-reply-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.reply-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    position: relative;
+    border: 1px solid black; 
+}
+.d-reply-modal-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    position: relative;
+    border: 1px solid white;
+    color: white; 
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: black; 
+    transition: color 0.3s;
+}
+.d-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white; 
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: red; 
+}
+.d-close-button:hover {
+    color: red; 
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.d-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: black; 
+    width: 100px; 
+}
+.d-form-group label {
+    font-weight: bold;
+    color: white; 
+    width: 100px; 
+}
+
+.form-group input, textarea {
+    border: 1px solid black; 
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    flex: 1; 
+    min-width: 200px; 
+    
+}
+.d-form-group input, textarea {
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    flex: 1; 
+    min-width: 200px; 
+    background-color: white;
+}
+
+ textarea {
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+
+.editor-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.d-editor-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.editor-icon {
+    font-size: 20px;
+    color: black; 
+    border: none;
+    background-color: white;
+}
+.d-editor-icon {
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.replyy-btn{
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+    
+}
+
+.editor-icon variable-button {
+    
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+.d-editor-icon variable-button {
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+
+
+
+/* Lead Details Section */
+.lead-details {
+    margin-top: 0px;
+    border-left: 1px solid black;
+    padding: 20px;
+    background-color:  white; 
+    color:black; 
+    width: 300px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.d-lead-details {
+    margin-top: 0px;
+    border-left: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color:  rgb(0, 0, 0); 
+    color:rgb(255, 255, 255); 
+    width: 300px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+#lead {
+   padding-left: 100px;
+   padding-bottom: 6px;
+   border: solid black;
+   background-color: #edf1f2;
+   
+
+}
+#d-lead {
+    padding-left: 100px;
+    padding-bottom: 6px;
+    border: solid white;
+    background-color: #1a1a1a;
+    
+ 
+ }
+.lead-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.d-lead-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+.lead-details p {
+    margin: 30px 10px;
+    
+}
+.d-lead-details p {
+    margin: 30px 10px;
+    
+}
+
+.lead-details a {
+    color: #80c9f6;
+    text-decoration: none;
+}
+.d-lead-details a {
+    color: #80c9f6;
+    text-decoration: none;
+}
+
+.lead-details a:hover {
+    text-decoration: underline;
+}
+.d-lead-details a:hover {
+    text-decoration: underline;
+}
+
+
+.details {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white; 
+    color: black; 
+    width: 260px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.d-details {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: black; 
+    color: white; 
+    width: 260px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.d-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.d-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.details strong {
+    text-align: right;
+    margin-left: 10px; 
+    flex-grow: 1; 
+}
+.d-details strong {
+    text-align: right;
+    margin-left: 10px; 
+    flex-grow: 1; 
+}
+
+.details a {
+    color: #80c9f6; 
+    text-decoration: none;
+}
+.d-details a {
+    color: #80c9f6; 
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+.d-details a:hover {
+    text-decoration: underline;
+}
+
+#lead1 {
+    padding-left: 100px;
+    padding-bottom: 6px;
+    border: solid black;
+    background-color: #edf1f2;
+    margin-top:  75px;
+ 
+ }
+ #d-lead1 {
+    padding-left: 100px;
+    padding-bottom: 6px;
+    border: solid white;
+    background-color: #1a1a1a;
+    margin-top:  75px;
+ 
+ }
+ .details1 {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white; 
+    color: black; 
+    width: 260px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height : 150px;
+}
+.d-details1 {
+    margin-top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5%;
+    padding: 20px;
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    width: 260px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height : 150px;
+}
+.details1 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.d-details1 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details1 p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.d-details1 p {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0 1px;
+    gap: 10px
+
+}
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.custom-alert-box {
+    background: #000; /* Black background */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glow effect */
+    max-width: 400px;
+    width: 90%;
+}
+
+.custom-alert-box p {
+    color: #ff4d4d; /* Red text color */
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.custom-alert-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-alert-buttons button {
+    margin: 0 5px;
+    padding: 10px 25px;
+    border: 2px solid #ff4d4d; /* Red border */
+    border-radius: 30px; /* More rounded corners */
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    color: #ff4d4d; /* Red text */
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.custom-alert-buttons button:hover {
+    background-color: #ff4d4d; /* Red background on hover */
+    color: #000; /* Black text on hover */
+    border-color: #ff4d4d; /* Ensure border stays red */
+}
+
+.custom-alert-buttons button:first-of-type {
+    background-color: #ff4d4d;
+    color: #000;
+}
+
+.custom-alert-buttons button:first-of-type:hover {
+    background-color: transparent;
+    color: #ff4d4d;
+}
