@@ -43,7 +43,7 @@ const OneBoxScreen = () => {
             localStorage.removeItem('authToken');  
             console.log('Auth token removed.');
 
-            navigate('/');  
+            navigate('/ReachInbox-Assignment');  
             console.log('Navigated to login page.');
         } catch (error) {
             console.error('Failed to reset emails:', error.message);

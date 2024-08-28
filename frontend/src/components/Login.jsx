@@ -7,7 +7,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleGoogleSignIn = () => {
-        const redirectUrl = 'http://localhost:3000';
+        const redirectUrl = 'https://Yoriichi17.github.io/ReachInbox-Assignment/';
         const googleLoginUrl = `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=${redirectUrl}`;
 
         window.open(googleLoginUrl, '_self');
@@ -19,8 +19,8 @@ const Login = () => {
 
         if (token) {
             localStorage.setItem('authToken', token);
-            window.history.replaceState({}, document.title, "/");
-            navigate('/onebox');
+            window.history.replaceState({}, document.title, "/ReachInbox-Assignment");
+            navigate('/ReachInbox-Assignment/onebox');
         }
     }, [navigate]);
 
