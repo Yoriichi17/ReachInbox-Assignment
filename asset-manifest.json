@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ReachInbox-Assignment/static/css/main.28ca3fdf.css",
-    "main.js": "/ReachInbox-Assignment/static/js/main.c7dd3c8b.js",
+    "main.js": "/ReachInbox-Assignment/static/js/main.90844006.js",
     "static/js/453.8ab44547.chunk.js": "/ReachInbox-Assignment/static/js/453.8ab44547.chunk.js",
     "static/media/BackD.png": "/ReachInbox-Assignment/static/media/BackD.5d2dbf49bdc59da256ba.png",
     "static/media/BackL.png": "/ReachInbox-Assignment/static/media/BackL.641690d99264f1ee30ea.png",
     "index.html": "/ReachInbox-Assignment/index.html",
     "main.28ca3fdf.css.map": "/ReachInbox-Assignment/static/css/main.28ca3fdf.css.map",
-    "main.c7dd3c8b.js.map": "/ReachInbox-Assignment/static/js/main.c7dd3c8b.js.map",
+    "main.90844006.js.map": "/ReachInbox-Assignment/static/js/main.90844006.js.map",
     "453.8ab44547.chunk.js.map": "/ReachInbox-Assignment/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28ca3fdf.css",
-    "static/js/main.c7dd3c8b.js"
+    "static/js/main.90844006.js"
   ]
 }
